@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="/style.css" />
 
     <!--box icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- hi -->
@@ -34,9 +31,7 @@
       </nav>
     </header>
     <!-- Portfolio section design -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">My <span>work</span></h2>
-    </section>
+
     <!-- home section design -->
     <section class="home" id="home">
       <div class="home-content">
@@ -47,16 +42,12 @@
         <p>
           Welcome to my website! I made the website by JS/HTML/CSS.
           <br />
-          Feel free to play around with buttons and check out the effects I've
-          made.
+          Feel free to play around with buttons and check out the effects I've made.
           <br />
-          Download my <span>Resume</span> for more details or just
-          <a href="#contact"><span>contact</span> </a> me.
+          Download my <span>Resume</span> for more details or just <a href="#contact"><span>contact</span> </a> me.
         </p>
         <div class="btn-box">
-          <a href="/2023_Szeto Lok_Resume.pdf" download="myResume" class="btn"
-            >Resume</a
-          >
+          <a href="/2023_Szeto Lok_Resume.pdf" download="myResume" class="btn">Resume</a>
           <!-- <a href="#" class="btn">Let's Talk</a> -->
         </div>
       </div>
@@ -65,9 +56,7 @@
         </div> -->
 
       <div class="home-sci">
-        <a href="https://gitlab.com/SzetoLok" target="_blank"
-          ><i class="bx bxl-gitlab"></i
-        ></a>
+        <a href="https://gitlab.com/SzetoLok" target="_blank"><i class="bx bxl-gitlab"></i></a>
         <a href="http://www.linkedin.com/in/lok-szeto-ab808320b" target="_blank"
           ><i class="bx bxl-linkedin-square"></i
         ></a>
@@ -88,23 +77,61 @@
       <div class="about-content">
         <h3>Software Engineer</h3>
         <p class="about-text">
-          Hi! I am Lucas. I have been doing programming for almost 2 years. I’ve
-          been building my career in the IT industry while studying for a
-          translation degree.
+          Hi! I am Lucas. I have been doing programming for almost 2 years. I’ve been building my career in the IT
+          industry while studying for a translation degree.
           <span class="about-more">
             <br /><br />
-            I have a year of experience as a Java programmer with Quantr
-            Limited. In my short time there, I've already contributed to over a
-            dozen projects and learned a lot about software development.
+            I have a year of experience as a Java programmer with Quantr Limited. In my short time there, I've already
+            contributed to over a dozen projects and learned a lot about software development.
             <br />
             <br />
-            I love exploring new technologies and finding innovative ways to use
-            them to improve people's lives. As a tech-savvy person, I am always
-            eager to learn and share my knowledge with others.
+            I love exploring new technologies and finding innovative ways to use them to improve people's lives. As a
+            tech-savvy person, I am always eager to learn and share my knowledge with others.
           </span>
         </p>
         <div class="btn-box btns">
           <button class="btn btn-readmore">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-container">
+        <h2 class="heading">My <span>work</span></h2>
+        <div class="portfolio-list">
+          <div class="portfolio-item">
+            <img src="Quantr.png" />
+            <div class="portfolio-item-layer">
+              <h3>Educational Software</h3>
+              <p>
+                This software simulates the operation of hardwares, allowing students to easily learn electrical
+                engineering knowledge.
+              </p>
+              <a href="https://www.quantr.foundation/2023/03/qemu-log-panel-tutorial/" target="_blank"
+                ><i class="bx bx-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="GekkoLab.png" />
+            <div class="portfolio-item-layer">
+              <h3>Company Landing Page</h3>
+              <p>This is GekkoLab's landing page, showcasing the products and the blogs of the company.</p>
+              <a href="https://www.gekko.ai/" target="_blank"><i class="bx bx-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="Arturst.png" />
+            <div class="portfolio-item-layer">
+              <h3>Salon Landing Page</h3>
+              <p>
+                This is Artrust's landing page which enables clients to make reservation and browse the service details
+                .
+              </p>
+              <a href="https://www.artrusthk.com/" target="_blank"><i class="bx bx-link-alt"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -154,12 +181,31 @@
 
                 <div class="job-detail-box">
                   <ul class="job-detail">
+                    <li>Created functional and technical application in Java</li>
                     <li>
-                      Created functional and technical application in Java
+                      Coordinated with team members to discuss the design and architecture of the company's software
+                      about Risc-V
                     </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-box experience">
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i>2023 Aug</div>
+                <h3>
+                  <pre>Gekko       <span>Software Engineer</span></pre>
+                </h3>
+
+                <div class="job-detail-box">
+                  <ul class="job-detail">
+                    <li>Created functional and technical application in Java</li>
                     <li>
-                      Coordinated with team members to discuss the design and
-                      architecture of the company's software about Risc-V
+                      Coordinated with team members to discuss the design and architecture of the company's software
+                      about Risc-V
                     </li>
                   </ul>
                 </div>
@@ -246,46 +292,24 @@
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input
-              type="text"
-              id="email"
-              placeholder="Email Address"
-              required
-            />
+            <input type="text" id="email" placeholder="Email Address" required />
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="input-box">
           <div class="input-field">
-            <input
-              type="text"
-              id="number"
-              placeholder="Mobile Number"
-              required
-            />
+            <input type="text" id="number" placeholder="Mobile Number" required />
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input
-              type="text"
-              id="emailsubject"
-              placeholder="Email Subject"
-              required
-            />
+            <input type="text" id="emailsubject" placeholder="Email Subject" required />
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="textarea-field">
-          <textarea
-            name=""
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
           <span class="focus"></span>
         </div>
 
@@ -306,14 +330,11 @@
       </div>
     </section>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function () {
-        emailjs.init("hnVQKaCxFu6_kLnQi");
-      })();
+      ;(function () {
+        emailjs.init("hnVQKaCxFu6_kLnQi")
+      })()
     </script>
     <script src="/script.js"></script>
   </body>

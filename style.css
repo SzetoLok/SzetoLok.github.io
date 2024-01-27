@@ -339,9 +339,103 @@ span {
 .btn-box.btns a::before {
   background: var(--second-bg-color);
 }
+.portfolio {
+  padding: 50px 0;
+  /* border: solid 1px red; */
+}
 
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.portfolio-item {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-item img {
+  width: 100%;
+  /* heit: 250px; */
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.portfolio-item-layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--second-bg-color));
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.portfolio-item-layer h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.portfolio-item-layer a {
+  position: relative;
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--main-color);
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.portfolio-item-layer a:hover {
+  color: var(--bg-color);
+}
+
+.portfolio-item-layer a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  /* combine with width 100 */
+  transition: 0.5s;
+}
+
+.portfolio-item-layer a:hover::before {
+  width: 100%;
+}
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+.portfolio-item:hover .portfolio-item-layer {
+  height: 100%;
+}
 .education {
   padding: 5rem;
+  background: var(--second-bg-color);
 }
 .education .education-row {
   display: flex;
@@ -434,7 +528,6 @@ span {
 .skills {
   min-height: auto;
   padding-bottom: 7rem;
-  background-color: var(--second-bg-color);
 }
 
 .skills .skills-row {
@@ -534,6 +627,7 @@ span {
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
+  background-color: var(--second-bg-color);
 }
 .contact form {
   max-width: 70rem;
@@ -611,7 +705,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  /* background: var(--second-bg-color); */
 }
 .footer-text p {
   font-size: 1.6rem;
